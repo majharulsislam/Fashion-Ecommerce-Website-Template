@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Checkout</title>
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- slick css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+	<!-- font awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+	<!-- JqueryUi -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+	<!-- Main Css -->
+	<link href="asset/css/style.css" rel="stylesheet">
+	<link href="asset/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="header_area checkout_header">
+	<!-- start middle header -->
+	<div class="middle_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-xl-10 offset-xl-1 offset-md-1">
+					<div class="row align-items-center">
+					<div class="col-md-2">
+						<a href="#" class="back"><i class="fas fa-chevron-left"></i>Back to Bag</a>
+						<a href="#" class="back2"><i class="far fa-arrow-alt-circle-left"></i></a>
+					</div>
+					<div class="col-md-10">
+						<div class="checkout_header middle_title">
+							<a href="#" class="d-flex align-items-center">
+								<img src="asset/img/icons/cart-car.png" alt="cart-car">
+								<h1>Best Sell Shop</h1>
+							</a>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end middle header -->
+</header>
+
+
+<section class="checkout_wrapper_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-xl-10 offset-xl-1 offset-md-1">
+				<div class="checkout_area">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="checkout_left_side_area">
+
+								<form id="msform">
+								  <!-- progressbar -->
+								  <ul id="progressbar">
+								    <li class="activet"></li>
+								    <li></li>
+								    <li></li>
+								  </ul>
+
+								  <!-- fieldsets 1st step -->
+								  <fieldset>
+								  	<div class="checkout_first_step">
+								  		<h2><span>1</span>Shipping & Gift Options</h2>
+								  		<div class="row">
+
+								  			<div class="col-md-6 check_input_mr check_input_wrap">
+								  				<input type="text" name="" class="form-control" required>
+								  				<label>Full Name</label>
+								  			</div>
+
+								  			<div class="col-md-6 check_input_mr check_input_wrap">
+								  				<input type="email" class="form-control" name="" required>
+								  				<label>Email</label>
+								  			</div>
+								  		</div>
+								  		<div class="row check_input_mr">
+								  			<div class="col-md-12">
+								  				 <textarea class="form-control" name="" rows="5">Address</textarea>
+								  			</div>
+								  		</div>
+								  		<div class="row">
+								  			<div class="col-md-6 check_input_mr check_input_wrap">
+								  				<input type="password" class="form-control" name="" required>
+								  				<label>Pin Code</label>
+								  			</div>
+								  			<div class="col-md-3 check_input_mr">
+								  				<select class="form-select form-control">
+											      <option selected>State</option>
+											      <option>State - 1</option>
+											      <option>State - 2</option>
+											    </select> 
+								  			</div>
+								  			<div class="col-md-3 check_input_mr check_input_wrap">
+								  				<input type="text" class="form-control" name="" required>
+								  				<label>City</label>
+								  			</div>
+								  		</div>
+								  		<div class="row check_input_mr check_input_wrap">
+								  			<div class="col-md-6">
+								  				<input type="text" class="form-control" name="" required>
+								  				<label>Phone Number</label>
+								  			</div>
+								  			<div class="col-md-6 d-flex align-items-center will_use_text">
+								  				<p class="will_use">we will use this phone number for delivery</p>
+								  			</div>
+								  		</div>
+								  		<div class="row check_input_mr">
+								  			<div class="col-md-12">
+								  				<div class="remember d-flex align-items-center">
+													<input type="radio" name="" id="remem">
+													<label for="remem"><p class="set_as">Set as Default Address</p></label>
+												</div>
+								  			</div>
+								  		</div>
+
+								  		<div class="row">
+								  			<div class="col-md-12">
+								  				<div class="product_page_cate single_category">
+												    <input type="checkbox" id="cat1" name="q"  class="questions">
+												    <div class="plus">+</div>
+												    <label for="cat1" class="question d"><h2><img src="asset/img/icons/briefcase.png" alt="image">Make This A Gift</h2></label>
+												    <div class="answers">
+												    	<div class="row">
+												    		<div class="col-md-12">
+												  				<div class="remember d-flex align-items-center">
+																	<input type="radio" name="makegift" id="gift">
+																	<label for="gift"><p>Gift Note Only (Free)</p></label>
+																</div>
+												  			</div>
+												    	</div>
+
+												    	<div class="row">
+												    		<div class="col-md-12">
+												  				<div class="remember d-flex align-items-center">
+																	<input type="radio" name="makegift" id="giftpp">
+																	<label for="giftpp"><p>Gift Packaging ($5.00 or free with orders of $500 or more)</p></label>
+																</div>
+												  			</div>
+												    	</div>
+												    	<div class="row check_input_mr" id="receipant">
+												    		<div class="col-md-12 check_input_wrap">
+												    			<input type="text" class="form-control" name="" required>
+												    			<label>Gift Recipient's Name (Required)</label>
+												    		</div>
+												    	</div>
+												    	<div class="row check_input_mr">
+												    		<div class="col-md-12">
+												  				 <textarea class="form-control" name="" rows="3">Gift Message (Optional)</textarea>
+												  			</div>
+												    	</div>
+												    </div>
+												</div>
+								  			</div>
+								  		</div>
+								  	</div>
+
+						  			<div class="checkout_btn">
+							  			<div class="check_pr_btn_back_text mobile_show">
+							  				<p class="red">$3,351.25</p>
+							  				<a href="#orderdm">View Price Details<i class="fas fa-chevron-up"></i></a>
+							  			</div>
+							  			<input type="button" name="next" class="next action-button" value="SAVE AND CONTINUE" />
+							  		</div>
+								  </fieldset>
+
+								  <!-- fieldsets 2nd step -->
+								  <fieldset>
+								  	<div class="checkout_first_step check_second_step">
+								  		<h2><span><i class="fas fa-check"></i></span>Shipping & Gift Options <a href="#" class="check_edit_btn">Edit</a></h2>
+								  		<div class="row">
+								  			<div class="col-md-6">
+								  				<div class="ship_address">
+								  					<h3>Shipping Address</h3>
+								  					<p>Customer Name</p>
+								  					<p>City</p>
+								  					<p>Address</p>
+								  					<p>888-000-888</p>
+								  					<p>yourmail@gmail.com</p>
+								  				</div>
+								  			</div>
+								  			<div class="col-md-6">
+								  				<div class="check_gift_note">
+								  					<p><img src="asset/img/icons/briefcase.png" alt="image">Gift For Name - Gift Note Only</p>
+								  				</div>
+								  			</div>
+								  		</div>
+								  		<h2><span>1</span>Shipping Options</h2>
+								  		<div class="shipping_new_added">
+								  			<p>Your order must be placed by 1PM EST to ensure estimated delivery date.</p>
+								  		<div class="row">
+								  			<div class="col-md-6">
+								  				<div class="second_radio_box">
+								  					<div class="remember d-flex">
+														<input type="radio" name="shipop" id="track1">
+														<label for="track1">
+															<img src="asset/img/icons/track1.png" alt="image">
+															<h3>Free & Regular Shipping</h3>
+															<p>Expected delivery 25 Dec</p>
+														</label>
+													</div>
+								  				</div>
+								  			</div>
+								  			<div class="col-md-6">
+								  				<div class="second_radio_box">
+								  					<div class="remember d-flex">
+														<input type="radio" name="shipop" id="track2">
+														<label for="track2">
+															<img src="asset/img/icons/track2.png" alt="image">
+															<h3>Fast 2 Days Shipping</h3>
+															<p>Expected delivery 2 Dec</p>
+														</label>
+													</div>
+								  				</div>
+								  			</div>
+								  		</div>
+								  		</div>
+								  	</div>
+
+								    <div class="checkout_btn">
+							  			<div class="check_pr_btn_back_text mobile_show">
+							  				<p class="red">$3,351.25</p>
+							  				<a href="#orderdm">View Price Details<i class="fas fa-chevron-up"></i></a>
+							  			</div>
+							  			<input type="button" name="next" class="next action-button" value="SAVE AND CONTINUE" />
+							  		</div>
+								  </fieldset>
+
+								  <!-- fieldsets 3rd step -->
+								  <fieldset>
+								    <div class="checkout_first_step check_second_step third_step">
+								    	<h2><span><i class="fas fa-check"></i></span>Shipping & Gift Options <a href="#" class="check_edit_btn">Edit</a></h2>
+								  		<div class="row">
+								  			<div class="col-md-6">
+								  				<div class="ship_address">
+								  					<h3>Shipping Address</h3>
+								  					<p>Customer Name</p>
+								  					<p>City</p>
+								  					<p>Address</p>
+								  					<p>888-000-888</p>
+								  					<p>yourmail@gmail.com</p>
+								  				</div>
+								  			</div>
+								  			<div class="col-md-6">
+								  				<div class="check_gift_note">
+								  					<p><img src="asset/img/icons/briefcase.png" alt="image">Gift For Name - Gift Note Only</p>
+								  				</div>
+								  			</div>
+								  		</div>
+								  		<h2><span><i class="fas fa-check"></i></span>Shipping Options<a href="#" class="check_edit_btn">Edit</a></h2>
+								  		<div class="row">
+								  			<div class="col-md-6">
+								  				<div class="check_free_ship">
+								  					<img src="asset/img/icons/track1.png" alt="image">
+													<h3>Free & Regular Shipping</h3>
+													<p>Expected delivery 25 Dec</p>
+								  				</div>
+								  			</div>
+								  			<div class="col-md-6"></div>
+								  		</div>
+								  		<h2><span>1</span>Payment</h2>
+								  		<div class="payment_option_area">
+								  			<div class="payment_items d-flex align-items-center">
+								  				<div class="single_payment_opt">
+								  					<div class="remember d-flex align-items-center">
+														<input type="radio" name="payment" id="credit">
+														<label for="credit">
+															<p>Credit Card</p>
+														</label>
+													</div>
+									  			</div>
+									  			<div class="single_payment_opt">
+								  					<div class="remember d-flex align-items-center">
+														<input type="radio" name="payment" id="paypal">
+														<label for="paypal">
+															<p>PayPal</p>
+														</label>
+													</div>
+									  			</div>
+									  			<div class="single_payment_opt">
+								  					<div class="remember d-flex align-items-center">
+														<input type="radio" name="payment" id="pay_late">
+														<label for="pay_late">
+															<p>Klarna - Buy now, pay later</p>
+														</label>
+													</div>
+									  			</div>
+								  			</div>
+
+								  			<div class="new_credit_card_form">
+							  					<h3>Add a new credit card</h3>
+							  					<div class="row check_input_mr">
+							  						<div class="col-md-12 check_input_wrap">
+							  							<input type="text" name="" class="form-control" required>
+							  							<label>Name Of Card</label>
+							  						</div>
+							  					</div>
+							  					<div class="row">
+							  						<div class="col-md-6 check_input_mr check_input_wrap">
+							  							<input type="number" name="" class="form-control" required>
+							  							<label>Credit Card Number</label>
+							  						</div>
+							  						<div class="col-md-3 check_input_mr check_input_wrap">
+							  							<input type="text" name="" class="form-control" required>
+							  							<label>Expire Date</label>
+							  						</div>
+							  						<div class="col-md-3 check_input_mr check_input_wrap">
+							  							<input type="text" class="form-control" required>
+							  							<label>CVV</label>
+							  							<a href="#">Where is the CVV?</a>
+							  						</div>
+							  					</div>
+							  					<div class="row">
+									    		<div class="col-md-12">
+									  				<div class="remember d-flex align-items-center">
+														<input type="radio" name="credit_card" id="sccr">
+														<label for="sccr"><p>Save Credit Card</p></label>
+													</div>
+													<div class="remember d-flex align-items-center">
+														<input type="radio" name="credit_card" id="bads">
+														<label for="bads"><p>Billing address is different from Shipping</p></label>
+													</div>
+									  			</div>
+									    	</div>
+								  			</div>
+								  		</div>
+								    </div>
+
+								    <div class="checkout_btn last_btn">
+							  			<div class="check_pr_btn_back_text mobile_show">
+							  				<p class="red">$3,351.25</p>
+							  				<a href="#orderdm">View Price Details<i class="fas fa-chevron-up"></i></a>
+							  			</div>
+							  			<input type="button" name="next" class="next action-button" value="ORDER REVIEW" />
+							  		</div>
+								  </fieldset>
+
+								  <!-- fieldsets 4rth step -->
+								  <fieldset>  
+								    <div class="checkout_first_step check_second_step third_step fourth_step">
+								    	<h2><span><i class="fas fa-check"></i></span>Shipping & Gift Options</h2>
+								  		<div class="row">
+								  			<div class="col-md-6">
+								  				<div class="ship_address">
+								  					<h3>Shipping Address</h3>
+								  					<p>Customer Name</p>
+								  					<p>City</p>
+								  					<p>Address</p>
+								  					<p>888-000-888</p>
+								  					<p>yourmail@gmail.com</p>
+								  				</div>
+								  			</div>
+								  			<div class="col-md-6">
+								  				<div class="check_gift_note">
+								  					<p><img src="asset/img/icons/briefcase.png" alt="image">Gift For Name - Gift Note Only</p>
+								  				</div>
+								  			</div>
+								  		</div>
+								  		<h2><span><i class="fas fa-check"></i></span>Shipping Options<a href="#" class="check_edit_btn">Edit</a></h2>
+								  		<div class="row">
+								  			<div class="col-md-6">
+								  				<div class="check_free_ship">
+													<h3>Free & Regular Shipping</h3>
+													<p>Expected delivery 25 Dec</p>
+								  				</div>
+								  			</div>
+								  			<div class="col-md-6"></div>
+								  		</div>
+								  		<h2><span><i class="fas fa-check"></i></span>Payment</h2>
+								  		<div class="payment_option_result">
+								  			<p>Credit Card</p>
+								  			<p class="por_title">Name of Card</p>
+								  			<p>Credit Card Number</p>
+								  			<p>Expiration Date</p>
+								  			<p>CVV</p>
+								  		</div>
+
+								  		<div class="order_reveiw_area mobile_show">
+											<h2><span><i class="fas fa-check"></i></span>Order Review</h2>
+											<div class="cart-popup_box d-flex">
+												<div class="cart-popup_img">
+													<a href="#"><img src="asset/img/cart-full/1.jpg" alt="image"></a>
+												</div>
+												<div class="cart-text">
+													<h4>Nanushka</h4>
+													<p>Zabel Maxi Dress</p>
+													<p>Grey , Small</p>
+													<p class="price">$675.00</p>
+												</div>
+											</div>
+											<div class="cart-popup_box d-flex">
+												<div class="cart-popup_img">
+													<a href="#"><img src="asset/img/cart-full/2.jpg" alt="image"></a>
+												</div>
+												<div class="cart-text">
+													<h4>Nanushka</h4>
+													<p>Zabel Maxi Dress</p>
+													<p>Grey , Small</p>
+													<p class="price">$675.00</p>
+												</div>
+											</div>
+										</div>
+								    </div>
+
+								    <div class="checkout_btn">
+							  			<input type="submit" name="submit" class="submit action-button" value="ORDER REVIEW" />
+							  		</div>
+								  </fieldset>
+
+								</form>
+
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="checkout_right_side_area">
+								<div class="order_details" id="orderdm">
+									<h3><span><i class="fas fa-check"></i></span>ORDER SUMMARY</h3>
+									<div class="order_text d-flex justify-content-between">
+										<p>Subtotal</p>
+										<p>$3,351.25</p>
+									</div>
+									<div class="order_text d-flex justify-content-between">
+										<p>Shipping</p>
+										<p>FREE</p>
+									</div>
+									<div class="order_text d-flex justify-content-between">
+										<p>Sales Tax</p>
+										<p>$0.00</p>
+									</div>
+								</div>
+								<div class="order_total d-flex justify-content-between">
+									<h3>Order Total</h3>
+									<h3 class="red">$3,351.25</h3>
+								</div>
+								<div class="order_promo_code_box">
+									<form action="" method="" check_input_wrap>
+										<input type="text" class="pro_code" name="" placeholder="Promo Code">
+										<input type="Submit" class="pro_btn" name="" value="Apply">
+									</form>
+								</div>
+								<div class="order_reveiw_area">
+									<h3>Order Review </h3>
+									<div class="cart-popup_box d-flex">
+										<div class="cart-popup_img">
+											<a href="#"><img src="asset/img/cart-full/1.jpg" alt="image"></a>
+										</div>
+										<div class="cart-text">
+											<h4>Nanushka</h4>
+											<p>Zabel Maxi Dress</p>
+											<p>Grey , Small</p>
+											<p class="price">$675.00</p>
+										</div>
+									</div>
+									<div class="cart-popup_box d-flex">
+										<div class="cart-popup_img">
+											<a href="#"><img src="asset/img/cart-full/2.jpg" alt="image"></a>
+										</div>
+										<div class="cart-text">
+											<h4>Nanushka</h4>
+											<p>Zabel Maxi Dress</p>
+											<p>Grey , Small</p>
+											<p class="price">$675.00</p>
+										</div>
+									</div>
+									<div class="cart-popup_box d-flex">
+										<div class="cart-popup_img">
+											<a href="#"><img src="asset/img/cart-full/3.jpg" alt="image"></a>
+										</div>
+										<div class="cart-text">
+											<h4>Nanushka</h4>
+											<p>Zabel Maxi Dress</p>
+											<p>Grey , Small</p>
+											<p class="price">$675.00</p>
+										</div>
+									</div>
+									<div class="cart-popup_box d-flex">
+										<div class="cart-popup_img">
+											<a href="#"><img src="asset/img/cart-full/4.jpg" alt="image"></a>
+										</div>
+										<div class="cart-text">
+											<h4>Nanushka</h4>
+											<p>Zabel Maxi Dress</p>
+											<p>Grey , Small</p>
+											<p class="price">$675.00</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- Mobile Footer area -->
+<section class="footer_mobile_area mobile_show">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-xl-10 offset-xl-1 offset-md-1">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="dropdown_footer_top">
+							<div class="single_category">
+							    <input type="checkbox" id="ft1" name="q"  class="questions">
+							    <div class="plus">+</div>
+							    <label for="ft1" class="question">SUPPORT</label>
+							    <div class="answers">
+							    	<ul>
+								        <li><a href="#">Contact Us</a></li>
+								        <li><a href="#">Shipping Policy</a></li>	
+								        <li><a href="#">Returns</a></li>	
+								        <li><a href="#">Order Status & Tracking</a></li>	
+								        <li><a href="#">International Shipping</a></li>	
+								    </ul>
+							    </div>
+							</div>
+							<div class="single_category">
+							    <input type="checkbox" id="ft2" name="q"  class="questions">
+							    <div class="plus">+</div>
+							    <label for="ft2" class="question">SERVICES</label>
+							    <div class="answers">
+							    	<ul>
+								        <li><a href="#">Buy Online, Pick Up in Store</a></li>
+										<li><a href="#">Saks At Your Service</a></li>
+								    </ul>
+							    </div>
+							</div>
+							<div class="single_category">
+							    <input type="checkbox" id="ft3" name="q"  class="questions">
+							    <div class="plus">+</div>
+							    <label for="ft3" class="question">SAKSFIRST CARD</label>
+							    <div class="answers">
+							    	<ul>
+								        <li><a href="#">SaksFirst</a></li>
+										<li><a href="#">Apply for the SaksFirst Store Card</a></li>
+										<li><a href="#">Pay & Manage SaksFirst Store Card</a></li>
+										<li><a href="#">Pay & Manage SaksFirst Mastercard</a></li>
+								    </ul>
+							    </div>
+							</div>
+							<div class="single_category">
+							    <input type="checkbox" id="ft4" name="q"  class="questions">
+							    <div class="plus">+</div>
+							    <label for="ft4" class="question">STORES & CORPORATE</label>
+							    <div class="answers">
+							    	<ul>
+								        <li><a href="#">About Us</a></li>
+										<li><a href="#">Stores Careers</a></li>
+										<li><a href="#">Ecommerce Careers</a></li>
+										<li><a href="#">Diversity Equity & Inclusion</a></li>
+										<li><a href="#">Saks Foundation</a></li>
+										<li><a href="#">Statement on Fur</a></li>
+										<li><a href="#">Store Locations & Events</a></li>
+										<li><a href="#">Customer Bill of Rights</a></li>
+								    </ul>
+							    </div>
+							</div>
+						</div>
+						<div class="dropdown_footer_bottom text-center">
+							<div class="mobile_footer_social">
+								<ul class="social_icon d-flex justify-content-center">
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#">@thesaksman</a></li>
+								</ul>
+							</div>
+							<div class="mobile_saks_app_area d-flex justify-content-center">
+								<div class="mobile_signup_text">
+									<ul class="signup_text">
+										<li><a href="#">Sign up for Texts</a></li>
+									</ul>
+								</div>
+								<div class="mobile_get_app">
+									<ul class="saks_app">
+										<li>
+											<a href="#"><img src="asset/img/icons/Mobile.svg" alt="mobile-phone">Get The Saks App</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="dropdown_btn footer_btn">
+								<a href="#">SITE FEEDBACK</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Mobile Footer Area -->
+
+<!-- Desctop Footer Area -->
+<section class="footer_top_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-xl-10 offset-xl-1 offset-md-1">
+				<div class="footer_top">
+					<div class="row">
+						<div class="col-md-3">
+							<h4>SUPPORT</h4>
+							<ul>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Shipping Policy</a></li>
+								<li><a href="#">Returns</a></li>
+								<li><a href="#">Order Status & Tracking</a></li>
+								<li><a href="#">International Shipping</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3">
+							<h4>SERVICES</h4>
+							<ul>
+								<li><a href="#">Buy Online, Pick Up in Store</a></li>
+								<li><a href="#">Saks At Your Service</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3">
+							<h4>SAKSFIRST CARD</h4>
+							<ul>
+								<li><a href="#">SaksFirst</a></li>
+								<li><a href="#">Apply for the SaksFirst Store Card</a></li>
+								<li><a href="#">Pay & Manage SaksFirst Store Card</a></li>
+								<li><a href="#">Pay & Manage SaksFirst Mastercard</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3">
+							<h4>STORES & CORPORATE</h4>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Stores Careers</a></li>
+								<li><a href="#">Ecommerce Careers</a></li>
+								<li><a href="#">Diversity Equity & Inclusion</a></li>
+								<li><a href="#">Saks Foundation</a></li>
+								<li><a href="#">Statement on Fur</a></li>
+								<li><a href="#">Store Locations & Events</a></li>
+								<li><a href="#">Customer Bill of Rights</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row footer_social_area">
+						<div class="col-md-3">
+							<ul class="social_icon d-flex">
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#">@thesaksman</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul class="signup_text">
+								<li><a href="#">Sign up for Texts</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul class="saks_app">
+								<li>
+									<a href="#"><img src="asset/img/icons/Mobile.svg" alt="mobile-phone">Get The Saks App</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<div class="footer_btn">
+								<a href="#">SITE FEEDBACK</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="footer_bottom_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-xl-10 offset-xl-1 offset-md-1">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="footer_bottom d-flex justify-content-between">
+							<div class="footer_left_text d-flex">
+								<p>© 2021, Saks Fifth Avenue</p>
+								<p>CA Transparency in Supply Chains Act</p>
+							</div>
+							<div class="footer_right_text">
+								<ul class="d-flex">
+									<li><a href="#">Term of Use</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>						
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Footer area -->
+
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<!-- bootstrap bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jquery ui -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- slick js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- Easing for multistep  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- main js -->
+<script src="asset/js/custom.js"></script>
+
+</body>
+</html>

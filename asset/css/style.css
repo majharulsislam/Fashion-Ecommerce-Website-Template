@@ -1,0 +1,2645 @@
+/* ----------------------------------------------------------------------------------------
+Author       : boost_design
+Template Name: Ecommerce
+Version      : 1.0
+ ---------------------------------------------------------------------------------------- */
+
+
+/*------------------------------------------------------------------*
+
+[Table of contents]
+
+01.Reset CSS
+02.Font CSS
+03.General Css 
+04.Common CSS
+
+***-------------------------------------------------------------------*/
+
+
+/* 01. Reset CSS
+=============================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+img{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+a:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+}
+
+.red{
+    color: #E01A2B !important;
+}
+/* Reset CSS End
+===============================================================*/
+
+@font-face {
+    font-family: tescobold;
+    src:url("../fonts/TESCO Modern Bold.woff");
+}
+
+@font-face {
+    font-family: tescoregular;
+    src:url("../fonts/TESCO Modern.woff");
+}
+
+
+textarea:hover, 
+select:hover, 
+input:hover, 
+textarea:active,
+select:active,
+input:active, 
+textarea:focus,
+select:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+
+
+
+/* 02. Font CSS Start
+=============================================================== */
+
+
+h1,
+h2,
+h3,
+ul,body {
+    font-family: tescobold;
+}
+
+
+
+h1 {
+    font-size: 42px;
+    line-height: 40px;
+    color: #3E3E3E;;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 40px;
+    color: #000;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #3E3E3E;
+}
+
+p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #3E3E3E; 
+}
+
+/* Font CSS End
+=============================================================== */
+
+
+/* 03. General CSS
+=============================================================== */
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    word-wrap: break-word;
+    text-decoration: none !important;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+}
+.col-md-10.col-xl-10.offset-xl-1.offset-md-1{
+    padding: 0px;
+}
+.col-md-10.col-xl-10.offset-xl-1.offset-md-1>.row{
+    margin: 0 -15px;
+}
+/* General Css End
+=============================================================== */
+
+.mobile_show{
+    display: none;
+}
+
+.single_banner img.mobile_visible{
+    display: none;
+}
+.single_banner img.desktop_visible{
+    display: block;
+}
+
+/* Top Header Css
+=============================================================== */
+
+.top_header {
+    background: #F8F8F8;
+    padding: 13px 0;
+}
+
+.top_header p {
+    font-size: 18px;
+    color: #3E3E3E;
+    font-family: tescoregular;
+}
+
+.top_header a {
+    font-size: 18px;
+    color: #3E3E3E;
+}
+
+.top_header_slider a{
+    font-family: tescobold;
+}
+.top_header_slider.text-center {
+    width: 39.8%;
+    display: flex;
+    justify-content: space-between;
+}
+.profile {
+    width: 30%;
+}
+.profile ul li a {
+    text-decoration-line: underline !important;
+}
+
+.profile ul li a img {
+    padding-left: 30px;
+    padding-right: 10px;
+}
+.profile ul span{
+    padding: 0 10px;
+    font-size: 20px;
+    color: #A8A8A8;
+}
+
+.top-custom-arrow.slick-custom-arrow-left.slick-arrow, .top-custom-arrow.slick-custom-arrow-right.slick-arrow {
+    cursor: pointer;
+}
+
+
+
+/* Middle Header Css
+============================ */
+.middle_header {
+    padding: 27px 0;
+}
+.middle_header h1{
+    font-size: 40px;
+    padding-left: 10px;
+}
+.middle_search_box input {
+    border: none;
+    padding-left: 20px;
+}
+.middle_cart img {
+    width: 30px;
+}
+.middle_search_box {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 10px;
+}
+.middle_search_box input::placeholder {
+    color: #D5D5D5;
+    font-family: 'tescoregular';
+}
+.middle_cart {
+    padding-left: 34px;
+    padding-right: 17px;
+    position: relative;
+}
+.middle_cart span {
+    width: 21px;
+    height: 22px;
+    background: red;
+    font-size: 14px;
+    color: #fff;
+    padding: 3px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    text-align: center;
+    line-height: 15px;
+    font-family: tescoregular;
+}
+
+/* Navbar Header Css
+=============================================================== */
+nav.navbar_area {
+    box-shadow: 0  0 3px rgba(0,0,0,.15);
+}
+.navbar_header ul li a {
+    display: block;
+    font-size: 16px;
+    color: #3E3E3E;
+    text-transform: uppercase;
+    line-height: 23px;
+    padding: 14px 15px;
+}
+.navbar_header ul li:first-child a{
+    padding-left: 0;
+}
+.navbar_header ul li:last-child a{
+    padding-right: 0;
+}
+.navbar_header ul li.active {
+    border-bottom: 3px solid #3E3E3E;
+}
+li.holiday a {
+    color: #FF0000 !important;
+}
+li.holiday a img{
+    padding-right: 5px;
+}
+
+
+/* Banner Header Css
+=============================================================== */
+
+.banner_area{
+    position: relative;
+}
+.banner_text h1{
+    color: #000000;
+    width: 85%;
+    line-height: 45px;
+}
+.banner_text p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    font-family: tescoregular;
+    margin-top: 9px;
+    margin-bottom: 30px;
+}
+.banner_text a {
+    color: #3E3E3E;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 6px 31px;
+    border: 1px solid #3E3E3E;
+    border-radius: 50px;
+}
+.banner_text {
+    position: absolute;
+    top: 90px;
+}
+
+.banner_area .slick-prev {
+    left: 8%;
+    z-index: 99;
+}
+
+.banner_area .slick-next {
+    right: 10%;
+    z-index: 99;
+}
+
+.banner_area .slick-next:before, .slick-prev:before{
+    font-size: 50px;
+}
+
+
+/* the edit area Css
+=============================================================== */
+.single_img_card {
+    padding-right: 30px;
+}
+.single_img_card:last-child {
+    padding-right: 0;
+}
+.single_img_card img {
+    margin-bottom: 16px;
+}
+.single_img_card p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    width: 86%;
+    margin: 0 auto;
+}
+
+.the_edit_title h2 {
+    text-align: center!important;
+    padding: 60px 0;
+    position: relative;
+}
+
+.the_edit_title h2:before {
+    display: block;
+    clear: both;
+    content: "";
+    background: #707070;
+    width: 41%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.the_edit_title h2:after {
+    display: block;
+    clear: both;
+    content: "";
+    background: #707070;
+    width: 41%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+
+/* the product recommended area Css
+=============================================================== */
+.text_green{
+    color: #189F1D !important;
+}
+.recomment_title.the_edit_title.text-center h2 {
+    margin-top: 20px;
+}
+.recomment_title.the_edit_title h2:before,.recomment_title.the_edit_title h2:after{
+    width: 30%;
+}
+.recoment_product.the_edit_img_box {
+    flex-wrap: wrap;
+}
+.recommended_area .recoment_single_card.single_img_card {
+    padding-right: 0;
+    flex-basis: 20%;
+    margin-bottom: 40px;
+    display: none;
+}
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
+}
+.recoment_single_card.single_img_card h3 {
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000;
+}
+.recoment_single_card.single_img_card p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #3E3E3E;
+    width: 80%;
+    font-family: tescoregular;
+}
+
+.product_listing_area .recoment_single_card.single_img_card:last-child {
+    display: block;
+}
+.product_pricing p {
+    font-size: 11px;
+    line-height: 18px;
+    color: #3E3E3E;
+    font-family: 'tescoregular';
+}
+.product_pricing {
+    padding-top: 10px;
+}
+.product_pricing p span.red {
+    font-size: 12px;
+    font-family: 'tescobold';
+    color: #FF0000;
+}
+.product_pricing p span.text-overline {
+    text-decoration: line-through;
+}
+
+.recoment_product.socond_list {
+    margin-top: 60px;
+}
+.loading_button {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.loading_button a img{
+    margin-right: 15px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.loading_button a{
+    font-size: 16px;
+    line-height: 25px;
+    color: #3E3E3E;
+    border: 1px solid #3E3E3E;
+    padding: 11px 49px;
+    border-radius: 50px;
+}
+
+
+/* featured product area Css
+=============================================================== */
+.featured_title.the_edit_title h2:before,.featured_title.the_edit_title h2:after{
+    width: 33%;
+}
+.featured_card{
+    text-align: center;
+    margin-right: 30px;
+}
+.featured_card:last-child {
+    margin: 0;
+}
+.featured_card h3 {
+    color: #3e3e3e;
+    margin-top: 30px;
+}
+.featured_card p {
+    font-size: 14px;
+    font-family: 'tescoregular';
+    line-height: 25px;
+    color: #3E3E3E;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.featured_card a {
+    border: 1px solid #3E3E3E;
+    padding: 6px 31px;
+    border-radius: 50px;
+    color: #3E3E3E;
+}
+
+
+/* arrival area Css
+=============================================================== */
+section.new_arrivals_area {
+    position: relative;
+}
+.arrivals_title.the_edit_title h2:before,.arrivals_title.the_edit_title h2:after{
+    width: 37%;
+}
+.arrivals_title.the_edit_title.text-center h2 {
+    margin-top: 40px;
+}
+.arrival-custom-arrow {
+    font-size: 40px;
+    color: #D5D5D5;
+}
+.arrival-custom-arrow.slick-custom-arrow-left {
+    left: -10%;
+    position: absolute;
+}
+.arrival-custom-arrow.slick-custom-arrow-right {
+    right: -10%;
+    position: absolute;
+}
+
+/* shop by style area Css
+=============================================================== */
+section.shop_by_style_area {
+    margin-top: 40px;
+    margin-bottom: 57px;
+}
+.shop_by_title.the_edit_title h2:before,.shop_by_title.the_edit_title h2:after{
+    width: 36%;
+}
+.shop_by_style_card.featured_card h3 {
+    margin-top: 18px;
+}
+
+/* saks service area Css
+=============================================================== */
+.saks_service_area{
+    background: #F8F8F8;
+    padding-bottom: 60px;
+}
+.saks_service_title h1 {
+    color: #3E3E3E;
+    line-height: 172px;
+}
+
+.saks_services_box {
+    text-align: center;
+}
+.saks_services_box h2 {
+    line-height: 35px;
+    color: #3E3E3E;
+    margin-top: 23px;
+    margin-bottom: 20px;
+}
+
+.saks_services_box a {
+    font-family: 'tescoregular';
+    line-height: 25px;
+    color: #3E3E3E;
+    border-bottom: 1px solid #3E3E3E;
+}
+
+
+/* Signup mails area Css
+=============================================================== */
+section.signup_area {
+    padding: 140px 0;
+}
+input.input_box {
+    padding: 11px 18px;
+    width: 420px;
+    border-radius: 50px;
+    border-color: #707070;
+}
+input.input_box::placeholder{
+    color:#D5D5D5;
+    font-size: 18px
+    line-height:25px;
+    font-family: tescoregular;
+}
+
+input.sign_up_btn {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 11px 47px;
+    border-color: #707070;
+    border-radius: 50px;
+    margin-left: 30px;
+    background: #3E3E3E;
+    color: #fff;
+}
+.sign_up_mails a {
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'tescoregular';
+    color: #3E3E3E;
+}
+
+.sign_up_mails form {
+    margin: 25px 0;
+}
+/*  End Home Page Css
+=============================================================== */
+
+
+
+/* Footer area css
+=============================================================== */
+
+.footer_top_area{
+    background: #D5D5D5;
+    padding: 60px 0;
+}
+.footer_top h4 {
+    font-size: 16px;
+    line-height: 35px;
+    color: #3E3E3E;
+}
+
+.footer_top ul li a {
+    font-size: 16px;
+    line-height: 35px;
+    font-family: 'tescoregular';
+    color: #3E3E3E;
+}
+.footer_social_area{
+    margin-top: 30px;
+}
+ul.social_icon li{
+    margin-right: 10px;
+}
+ul.social_icon li a i {
+    background: #333033;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50px;
+    font-size: 10px;
+}
+ul.saks_app li a img {
+    margin-right: 10px;
+}
+ul.saks_app li a img {
+    margin-right: 10px;
+}
+.footer_btn a {
+    font-size: 16px;
+    line-height: 35px;
+    font-family: 'tescoregular';
+    color: #3E3E3E;
+    border: 1px solid #3E3E3E;
+    padding: 9px 35px;
+    border-radius: 50px;
+}
+.footer_left_text p {
+    font-size: 16px;
+    line-height: 35px;
+    color: #3E3E3E;
+    font-family: tescoregular;
+}
+.footer_left_text p:first-child {
+    margin-right: 40px;
+}
+.footer_right_text ul li a {
+    font-size: 16px;
+    line-height: 35px;
+    color: #3E3E3E;
+    font-family: 'tescoregular';
+    margin-left: 40px;
+    text-decoration-line: underline !important;
+}
+
+.footer_bottom {
+    padding: 11px 0;
+}
+
+/*mobile footer*/
+section.footer_mobile_area {
+    background: #D5D5D5;
+    padding: 30px 0;
+}
+.dropdown_footer_top label.question {
+    font-size: 14px;
+    line-height: 35px;
+    font-family: 'tescobold';
+}
+.dropdown_footer_top .single_category {
+    width: 100%;
+}
+.dropdown_footer_top .answers ul li a {
+    font-size: 14px;line-height: 35px;font-family: 'tescoregular';
+}
+.dropdown_footer_top .answer {
+    padding: 0;
+}
+.dropdown_footer_top .answers {
+    padding: 0 !important;
+}
+.dropdown_footer_bottom ul li a {
+    font-size: 16px;
+    line-height: 35px;
+    color: #3e3e3e;
+    font-family: 'tescoregular';
+}
+.dropdown_footer_bottom {
+    margin-top: 25px;
+}
+.mobile_signup_text {
+    margin-right: 20px;
+}
+.dropdown_btn.footer_btn {
+    margin-top: 25px;
+}
+
+
+  /*=========================================*/
+ /*=========== Product Listing Page ========*/
+/*=========================================*/
+
+
+/* Cocktail area css
+=============================================================== */
+.cocktail_category{
+    margin: 15px 0;
+}
+.cocktail_category ul li a {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'tescoregular';
+    color: #3E3E3E;
+}
+.cocktail_category ul li a i {
+    margin: 0 17px;
+}
+.cocktail_title_area {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.07);
+    padding-bottom: 8px;
+}
+.cocktail_title h2 {
+    font-size: 28px;
+    line-height: 40px;
+    color: #3E3E3E;
+    text-transform: uppercase;
+}
+.shorted_area p, .feature_drop_menu ul li a {
+    font-size: 16px;
+    line-height: 23px;
+    color: #3E3E3E;
+}
+.model_view {
+    margin-right: 60px;
+}
+.model_view .modeon {
+    margin: 0 11px;
+}
+.model_view p.active {
+    border-bottom: 1px solid #3E3E3E;
+}
+.short_by p {
+    text-transform: uppercase;
+    margin-right: 7px;
+}
+.short_by p:last-child {
+    margin-right: 0;
+}
+
+button#featue_btn {
+    border: none;
+    background: none;
+}
+
+button#featue_btn:after {
+    content: none;
+}
+
+
+/* Product Listing category items area css
+=============================================================== */
+
+.product_categories p,.question,.answers ul li a {
+    font-size: 16px;
+    line-height: 23px;
+    font-family: 'tescoregular';
+    color: #3E3E3E;
+}
+.single_category {
+    position: relative;
+}
+.category_items {
+    height: 655px;
+    overflow-y: scroll;
+}
+.single_category {
+    position: relative;
+    border-bottom: 1px solid #AEAEAE;
+    padding: 15px 0;
+    width: 93%;
+}
+.product_categories p{
+    border-bottom: 1px solid #AEAEAE;
+    padding: 15px 0;
+}
+.all_listing_product {
+    margin-top: 60px;
+}
+.all_listing_product .col-md-3.col-sm-6 {
+    display: none;
+}
+.single_list_product.recoment_single_card {
+    margin-bottom: 60px;
+}
+
+.product_listing_loading.loading_button {
+    margin-top: 10px;
+    margin-bottom: 110px;
+}
+
+/* Category toggle css
+========================== */
+/*Question*/
+.question {
+  position: relative;
+  margin: 0;
+  display: block;
+  width:100%;
+  cursor: pointer;
+}
+/*Answer*/
+.answers {
+  padding: 0px 15px;
+  width:100%!important;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.questions:checked ~ .answers{
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+  
+}
+/*category Toggle*/
+.plus {
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  font-size: 22px;
+  color: #3E3E3E;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+
+}
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+.questions {
+  display: none;
+}
+
+
+
+/* Product page gallery slider  css
+================================================== */
+
+.single_product_view_area .slider.slider-for.slick-initialized.slick-slider{
+    margin-top: 60px;
+}
+
+.single_product_view_area .vehicle-detail-banner .car-slider-desc {
+    max-width: 180px;
+    margin: 0 auto;
+}
+.single_product_view_area .banner-slider .slider.slider-for {
+    max-width: 84%;
+    padding-left: 35px;
+}
+.single_product_view_area .banner-slider .slider.slider-nav {
+    max-width: 16%;
+}
+.single_product_view_area .banner-slider .slider.slider-for,
+.single_product_view_area .banner-slider .slider.slider-nav {
+    width: 100%;
+    float: right;
+}
+.single_product_view_area .banner-slider .slider.slider-nav {
+    height: 610px;
+    overflow: hidden;
+
+}
+.single_product_view_area .slider-banner-image {
+    height: 610px;
+}
+.single_product_view_area .banner-slider .slider.slider-nav {
+    padding: 20px 0 0;
+}
+.single_product_view_area .slider-nav .slick-slide.thumbnail-image .thumbImg{
+    max-width: 178px;
+    height: 110px;
+    margin: 0 auto;
+    border: 1px solid #EBEBEB;
+}
+.single_product_view_area .slider-banner-image img,
+.single_product_view_area .slider-nav .slick-slide.thumbnail-image .thumbImg img {
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+.single_product_view_area .slick-vertical .slick-slide:active,
+.single_product_view_area .slick-vertical .slick-slide:focus,
+.single_product_view_area .slick-arrow:hover,
+.single_product_view_area .slick-arrow:focus {
+    border: 0;
+    outline: 0;
+}
+.single_product_view_area .slider-nav .slick-slide.slick-current.thumbnail-image .thumbImg {
+    border: 2px solid #196DB6;
+}
+.single_product_view_area .slider-nav .slick-slide.slick-current span {
+    color: #196DB6;
+}
+.single_product_view_area .slider-nav .slick-slide {
+    text-align: center;
+}
+.single_product_view_area .slider-nav .slick-slide span {
+    font-size: 14px;
+    display: block;
+    padding: 5px 0 15px;
+}
+.single_product_view_area .slick-custom-arrow-right {
+    width: 100%;
+    background-color: transparent;
+    font-size: 20px;
+    position: absolute;
+    left: 44%;
+    right: 0;
+    transform: translateX(-10px);
+    z-index: 99;
+}
+
+.single_product_view_area .slick-custom-arrow-right i {
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+@media screen and (max-width : 991px) {
+
+    .single_product_view_area .banner-slider .slider.slider-for,
+    .single_product_view_area .banner-slider .slider.slider-nav {
+        max-width: 100%;
+        float: none;
+    }
+    .single_product_view_area .banner-slider .slider.slider-for {
+        padding-right: 0;
+    }
+    .single_product_view_area .banner-slider .slider.slider-nav {
+        height: auto;
+    }
+    .single_product_view_area .slider-banner-image {
+        height: 500px;
+    } 
+    .single_product_view_area .slider.slider-nav.thumb-image {
+        padding: 10px 30px 0;
+    }
+    .single_product_view_area .slider-nav .slick-slide span {
+        padding: 5px 0;
+    }
+    .single_product_view_area .slick-arrow {
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        bottom: 0;
+        -webkit-transform: translateY(-50%) rotate(-90deg);
+        -moz-transform: translateY(-50%) rotate(-90deg);
+        -ms-transform: translateY(-50%) rotate(-90deg);
+        transform: translateY(-50%) rotate(-90deg);
+    }
+    .single_product_view_area .slick-prev {
+        left: 0;
+        right: unset;
+    }
+    .single_product_view_area .slick-next {
+        left: unset;
+        right: 0;
+        background-color: transparent;
+    }
+    .single_product_view_area .vehicle-detail-banner .car-slider-desc {
+        max-width: 340px;
+    }
+    .single_product_view_area .bid-tag {
+        padding: 10px 0 15px;
+    }
+    .single_product_view_area .slider.slider-nav.thumb-image {
+       white-space: nowrap;
+    }
+    .single_product_view_area .thumbnail-image.slick-slide {
+        padding: 0px 5px;
+        min-width: 75px;
+        display: inline-block;
+        float: none;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .single_product_view_area .slider-banner-image {
+        height: 400px;
+    }
+    .single_product_view_area .slider.slider-nav.thumb-image {
+        padding: 0px 20px 0;
+        margin: 10px 0px 0;
+    }
+    .single_product_view_area .slider-nav .slick-slide.thumbnail-image .thumbImg {
+        max-width: 140px;
+        height: 80px;
+    }
+    .single_product_view_area .slick-prev.slick-arrow {
+        background-position: center 10px;
+    }
+    .single_product_view_area .slick-next.slick-arrow {
+        background-position: center 10px, center;
+    }
+    .single_product_view_area .slider-nav .slick-slide span {
+        font-size: 12px;
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .single_product_view_area .slider-banner-image {
+        height:340px;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .single_product_view_area .slider-banner-image {
+        height:280px;
+    }
+}
+
+/* End -> Product page gallery slider  css
+================================================== */
+
+
+/* Product page gallery details css
+================================================== */
+.product_details {
+    margin-top: -40px;
+}
+.product_details h2 {
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: #3E3E3E;
+    margin-bottom: 15px;
+}
+
+.product_details p {
+    font-size: 16px;
+    line-height: 23px;
+    font-family: 'tescoregular';
+    text-align: center;
+}
+.product_price h3 span.red {
+    font-size: 24px;
+    line-height: 34px;
+    color: #E01A2B;
+    font-family: 'tescobold';
+}
+.product_price {
+    text-align: center;
+    margin: 11px 0 13px;
+}
+.product_price h4 {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'tescoregular';
+}
+.product_price h4 span {
+    font-family: 'tescobold';
+    color: #347B1F;
+}
+.product_price p {
+    font-size: 14px;
+    line-height: 20px;
+}
+.product_offer{
+    border: 1px dashed #000;
+    padding: 10px;
+    margin-top: 35px;
+    padding-right: 0;
+    padding-left: 17px;
+}
+
+.offer_text p:first-child {
+    border: 1px dashed #3e3e3e;
+    padding: 5px 15px;
+    position: relative;
+    border-right: 0;
+    background: #fff;
+    margin-top: -28px;
+    margin-right: 29px;
+    font-style: italic;
+    font-family: monospace;
+
+}
+.product_offer_details p:first-child{
+    font-size: 16px;
+    line-height: 23px;
+    font-family: tescoregular;
+    color: #E01A2B;
+    border: 1px dashed #3e3e3e;
+    padding: 5px 15px;
+    margin-top: -28px;
+    background: #fff;
+    margin-right: -1px;
+}
+
+.offer_text p:first-child:before {
+    display: block;
+    clear: both;
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    border-top: 1px dashed #000;
+    transform: rotate(30deg);
+    right: -25px;
+    top: 6px;
+    background: #fff;
+}
+.offer_text p:first-child:after {
+    display: block;
+    clear: both;
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    border-top: 1px dashed #000;
+    transform: rotate(-30deg);
+    right: -30px;
+    bottom: 7px;
+}
+.product_offer_details p:last-child {
+    border-left: 1px solid #3e3e3e;
+    padding: 0 15px;
+}
+
+.offer_text p:last-child {
+    padding-right: 10px;
+}
+.offer_text p:first-child span {
+    width: 4px;
+    height: 4px;
+    background: #707070;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -2px;
+    border-radius: 50%;
+}
+.product_offer_details p:last-child,.offer_text p:last-child {
+    font-size: 12px;
+    line-height: 17px;
+    font-family: 'tescoregular';
+    margin-top: 10px;
+}
+.product_offer_details p:last-child {
+    text-align: left;
+}
+
+.product_offer_details p:last-child a {
+    color: #272525;
+    font-size: 13px;
+}
+.more_product{
+    margin: 10px 0 20px;
+}
+.more_product a {
+    font-size: 12px;
+    line-height: 17px;
+    color: #272525;
+    font-family: 'tescoregular';
+    border-bottom: 1px solid #272525;
+}
+.product_color_area {
+    margin: 10px 0;
+}
+.product_color_area h3 {
+    color: #272525;
+}
+div#color_plate {
+    width: 43px;
+    height: 43px;
+    margin: 0 auto;
+    border: 1px solid #A8A8A8;
+    border-radius: 50%;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.16);
+}
+input#color_plate_out {
+    width: 36px;
+    height: 37px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0px;
+    border: none;
+    margin: 0px;
+    background: #000;
+    outline: 0;
+    margin-top: 1.5px;
+    margin-left: 1.25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+.product_color_area p,.location p,.delivery_option_area p {
+    font-size: 14px;
+    color: #272525;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.product_color_area h3 {
+    color: #272525;
+    margin-bottom: 10px;
+}
+.size_title h3 {
+    color: #272525;
+}
+.size_title p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #272525;
+    border-bottom: 1px solid #272525;
+}
+
+.product_size{
+    margin-top: 15px;
+}
+.product_size ul li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.product_size ul li:last-child{
+    margin-right: 0;
+}
+.product_size ul li.activel a{
+    background: #494949;
+    color: #fff;
+}
+.product_size ul li a{
+    width: 42px;
+    height: 42px;
+    border: 1px solid #A8A8A8;
+    border-radius: 50%;
+    display: block;
+    clear: both;
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+    font-family: 'tescoregular';
+    color: #3E3E3E;
+}
+.location{
+    margin: 20px 0 30px;
+}
+.location img {
+    margin-right: 10px;
+}
+.location p{
+    margin-top: 0;
+}
+
+.bag_btn a{
+    display: block;
+    background: #494949;
+    color: #fff;
+    padding: 17px 0;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'tescoregular';
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.delivery_option_area {
+    margin-bottom: 30px;
+}
+.delivery_option_area h3 {
+    color: #272525;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.delivery_box {
+    border: 1px solid #707070;
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.delivery_box input{
+    border: none;
+}
+.delivery_box input::placeholder{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'tescoregular';
+}
+.product_details_text_area {
+    border-top: 1px solid #A8A8A8;
+    padding-top: 20px;
+}
+.product_details_text_area h3 {
+    font-family: 'tescoregular';
+    color: #272525;
+    text-transform: uppercase;
+}
+.product_details_text_area p {
+    text-align: left;
+    margin: 22px 0 25px;
+}
+.details_bottom_text ul li, .size_and_fit ul li {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'tescoregular';
+    list-style: disc;
+    margin-left: 20px;
+    color: #3E3E3E;
+}
+.size_and_fit {
+    margin-top: 25px;
+    border-bottom: 1px solid #A8A8A8;
+    padding-bottom: 20px;
+}
+.size_and_fit h3 {
+    font-size: 16px;
+    line-height: 23px;
+    font-family: 'tescobold';
+    color: #3E3E3E;
+}
+.product_page_cate.single_category {
+    width: 100%;
+}
+
+/* also like section css  */
+section.also_like_area.new_arrivals_area {
+    margin-bottom: 100px;
+}
+.also_like_title.arrivals_title.the_edit_title.text-center h2 {
+    margin-top: 20px;
+}
+
+.arrival-custom-arrow i{
+    cursor: pointer;
+}
+
+.also_like_title.arrivals_title.the_edit_title h2:before, .also_like_title.arrivals_title.the_edit_title h2:after{
+    width: 35%;
+}
+
+
+
+
+/*====================
+ Sign up form page css
+==================================*/
+.signup_box {
+    max-width: 425px;
+    margin: 0 auto;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.26);
+    padding:0 58px 127px;
+}
+.close_btn {
+    padding-top: 47px;
+    padding-bottom: 90px;
+    text-align: right;
+}
+.signup_box h1 {
+    font-size: 32px;
+    line-height: 46px;
+    color: #272525;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sign_input_box{
+    border: 1px solid #707070;
+    border-radius: 5px;
+    padding: 22px 19px 23px;
+    margin-top: 30px;
+}
+.sign_input_box img {
+    margin-top: -2px;
+}
+.sign_input_box span.view a img {
+    margin-top: 0px;
+}
+.sign_input_box input {
+    border: none;
+    width: 80%;
+    padding-left: 10px;
+}
+.sign_input_box input::placeholder{
+    color:#B4B4B4;
+    font-size: 18px;
+    font-family: tescoregular;
+    line-height: 25px;
+}
+
+.remember_area{
+    margin-top: 10px;
+}
+.remember p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 10px;
+}
+.remember input {
+    width: 21px;
+    height: 21px;
+    color: #272525;
+}
+
+.remember_area a {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'tescoregular';
+    color: #272525;
+    text-decoration-line: underline !important;
+}
+.signup_btn a,.guest_checkout_btn a {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+    color: #fff;
+    background: #3E3E3E;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 18px 20px;
+    margin-top: 69px;
+}
+
+.sign_input_box span.view {
+    float: right;
+}
+.or_title p{
+    font-size: 18px;
+    line-height: 25px;
+    color: #272525;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+.or_title p:before{
+    position: absolute;
+    content: "";
+    display: block;
+    clear: both;
+    width: 40%;
+    height: 1px;
+    background: #707070;
+    left: 0;
+    top: 50%;
+}
+
+.or_title p:after{
+    position: absolute;
+    content: "";
+    display: block;
+    clear: both;
+    width: 40%;
+    height: 1px;
+    background: #707070;
+    right: 0;
+    top: 50%;
+}
+.guest_checkout_btn a{
+    background:transparent;
+    border: 1px solid #3E3E3E;
+    border-radius: 5px;
+    color: #3E3E3E;
+    margin-top: 50px;
+}
+.remember input[type="radio"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.remember input[type="radio"]{
+    position: relative;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    border: 1px solid #707070;
+    background-color: transparent;
+    box-shadow: inset 0px 2px 3px rgba(0, 0, 0, .16%);
+}
+.remember input[type="radio"]:checked::before{
+    content: " ";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: #707070;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .16%);
+    left: 2px;
+    top: 2px;
+}
+
+
+
+/*====================
+Cart popup page css
+=================================================*/
+section.cart_popup_wrraper.container {
+    margin-top: 60px;
+}
+.cart-popup_box_area {
+    max-width: 310px;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    z-index: 99;
+    
+}
+.cart-popup_box_area.third{
+    height: 260px;
+    overflow-y: scroll;
+}
+.cart-popup_box {
+    border-bottom: 1px solid #707070;
+    padding: 20px 0;
+    position: relative;
+}
+.cart_pop_close img {
+    width: 13px;
+    float: right;
+}
+.cart_pop_close img {
+    width: 13px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.cart-popup_img img {
+    width: 99px;
+}
+.cart-text {
+    margin-left: 12px;
+}
+.cart-text h4 {
+    font-size: 14px;
+    line-height: 20px;
+    color: #272525;
+}
+.cart-text p {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: tescoregular;
+}
+.cart-text p.price {
+    color: #E01A2B;
+}
+a.cart_btn {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    background: #3E3E3E;
+    color: #fff;
+    border-radius: 3px;
+    padding: 13px 0;
+}
+.cart-popup_box_area.first {
+    float: left;
+}
+.cart-popup_box_area.second {
+    position: relative;
+    z-index: 99;
+    float: left;
+    margin: 45px;
+}
+
+.cart-popup_box_area.second:after {
+    display: block;
+    clear: both;
+    /*content: "";*/
+    position: absolute;
+    top: -14px;
+    right: 30px;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    transform: rotate(45deg);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    z-index: 98;
+}
+
+.qty {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.qty a {
+    color: #272525;
+    border: 1px solid #272525;
+    padding: 0 5px;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,0.16);
+    font-size: 12px;
+    margin: 0 3px;
+}
+a.qty_val {
+    font-size: 14px;
+}
+
+.estimate_total{
+    padding: 16px 0;
+    margin-top: 145px;
+}
+.estimate_total p{
+    font-size: 16px;
+    line-height: 23px;
+    color: #272525;
+}
+.estimate_total p.est_val{
+    color: #E01A2B;
+}
+
+
+/*====================
+Account Login page css
+=================================================*/
+.account_login_new_here {
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 174px;
+}
+.account_login_sign_up {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    margin-right: 30px;
+}
+.account_login_sign_up .signup_box {
+    max-width: inherit;
+    margin: 0;
+    box-shadow: none;
+    padding: 0;
+}
+.account_login_new_here h1 {
+    font-size: 32px;
+    line-height: 46px;
+    color: #272525;
+}
+
+.account_login_new_here h3 {
+    font-size: 24px;
+    line-height: 34px;
+    color: #272525;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.single_new_here p {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'tescoregular';
+    margin-top: 10px;
+}
+
+.account_login_new_here .new_here_details {
+    align-items: end;
+}
+
+/*====================
+Account register page css
+=================================================*/
+
+section.sign_wrapper {
+    overflow: hidden;
+}
+
+.account_register_box {
+    margin-top: 80px;
+    margin-bottom: 83px;
+}
+
+.account_register_box .signup_box {
+    max-width: inherit;
+    margin: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+.account_register_box .sign_input_box input{
+    width: 85%;
+}
+
+
+/*====================
+ Cart empty page css
+=================================================*/
+.cart_page_empty_box {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.cart_page_empty_box .signup_box {
+    max-width: inherit;
+    margin: 0;
+    box-shadow: none;
+    padding: 0;
+}
+.car_empty_text {
+    margin-bottom: 30px;
+}
+.car_empty_text p {
+    font-size: 16px;
+    line-height: 23px;
+    font-family: 'tescoregular';
+}
+.cart_page_empty_box .signup_btn a {
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+
+.cart_page_empty_box .guest_checkout_btn a{
+    margin: 0;
+}
+
+
+
+/*====================
+ Cart full page css
+=================================================*/
+.cart_full_quantity .number span{
+    cursor:pointer;
+}
+.cart_full_quantity .number .minusq,.cart_full_quantity .number .plusq{
+    width:20px;
+    background:#f2f2f2;
+    border-radius:4px;
+    border:1px solid #272525;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+.cart_full_quantity .number input{
+    height: 30px;
+    width: 25px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #272525;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section.cart_full_page_wrapper {
+    margin: 55px 0 100px;
+}
+.cart_product_details_area {
+    margin-right: 30px;
+}
+.single_cart_full_product {
+    margin-top: 30px;
+    border-bottom: 1px solid #707070;
+}
+.cart_full_top_area {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 10px;
+}
+.cart_product_details_area h2 {
+    color: #272525;
+    text-transform: uppercase;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 15px;
+}
+.cart_full_product .cart-text h4 {
+    font-size: 16px;
+    line-height: 23px;
+}
+.cart_full_product .cart-text p {
+    font-size: 16px;
+    line-height: 23px;
+    font-family: tescoregular;
+}
+.cart_full_product .cart-text p span {
+    color: #272525;
+    text-decoration-line: line-through;
+}
+.cart_full_quantity {
+    text-align: center;
+}
+.cart_full_product_price{
+    text-align: right;
+}
+.cart_full_product_price p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.cart_full_edit {
+    margin-top: 40px;
+}
+.cart_full_edit a {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'tescoregular';
+    color: #272525;
+    text-decoration-line: underline !important;
+}
+.cart_full_close a img {
+    width: 15px;
+}
+
+.cart_full_product .cart-text {
+    margin-left: 0px;
+}
+.cart_full_radio .remember p {
+    font-size: 16px;
+    line-height: 23px;
+    font-family: 'tescoregular';
+}
+.cart_full_radio{
+    margin-top: 19px;
+    margin-bottom: 5px;
+}
+.cart_full_radio .remember {
+    margin-bottom: 15px;
+}
+.order_summery_area {
+    margin-left: 30px;
+}
+.order_summery_area .cart_full_price {
+    display: none;
+}
+.mobile_cartfull_price.also_like_cart .cart_full_price {
+    display: none;
+}
+.order_details {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.order_details h3 span {
+    display: none;
+}
+.order_details h3,.order_total h3 {
+    color: #272525;
+    padding-bottom: 17px;
+}
+.order_text p {
+    font-size: 16px;
+    line-height: 23px;
+    font-family: 'tescoregular';
+    margin-bottom: 10px;
+}
+.order_promo_code_box form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.order_promo_code_box input::placeholder{
+    font-size: 18px;
+    line-height: 25px;
+    color: #272525;
+}
+.order_promo_code_box input[type=text]{
+    width: 77%;
+    border: none;
+}
+.order_promo_code_box input[type=submit]{
+    font-size: 16px;
+    line-height: 23px;
+    font-family: 'tescoregular';
+    box-shadow: inset 0 3px 6px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 19px 11px;
+}
+.order_promo_code_box {
+    border: 1px solid #707070;
+    border-radius: 5px;
+    padding: 20px 23px;
+    margin: 40px 0 60px;
+}
+.order_checkout_btn a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    background: #3E3E3E;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    color: #fff;
+    padding: 23px 0 22px;
+}
+
+/*====================
+ CMS page css
+=================================================*/
+.cms_area {
+    margin: 60px 0 95px;
+}
+.cms_left_side {
+    margin-right: 32px;
+    position: sticky;
+    top: 0;
+}
+
+.cms_right_side {
+    margin-left: 32px;
+}
+.cms_area h2 {
+    color: #272525;
+    background: #fff;
+    text-transform: uppercase;
+}
+
+.cms_left_side ul li a {
+    color: #3E3E3E;
+    line-height: 23px;
+}
+
+.cms_left_side ul li {
+    border-bottom: 1px solid #AEAEAE;
+    padding: 16px 0;
+}
+.single_csm_details h3 {
+    color: #272525;
+        margin: 16px 0 18px;
+}
+.single_csm_details p {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'tescoregular';
+}
+
+.single_csm_details p i {
+    font-size: 12px;
+    margin-right: 18px;
+}
+
+.single_csm_details.cms_deliver_other_text {
+    margin-top: 30px;
+}
+.single_csm_details p.cms_no_icon {
+    margin-bottom: 15px;
+}
+.single_csm_details p.cms_no_icon_text {
+    margin: 17px 0;
+}
+
+
+/*====================
+Checkout page css
+=================================================*/
+.header_area a.back {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'tescoregular';
+    color: #272525;
+}
+.header_area a.back2 {
+    color: #3e3e3e;
+    font-size: 20px;
+    display: none;
+}
+.checkout_header.middle_title a {
+    justify-content: center;
+    margin-left: -70px;
+}
+
+.order_reveiw_area .cart-popup_box {
+    border-bottom: none;
+    padding: 0;
+    margin-top: 30px;
+}
+/*easing for multi step*/
+/*form styles*/
+#msform {
+    position: relative;
+}
+
+/*progressbar*/
+#progressbar {
+    overflow: hidden;
+    counter-reset: step;
+    position: relative;
+}
+#progressbar li {
+    text-align: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 49%;
+    float: left;
+    position: relative;
+    height: 20px;
+}
+#progressbar li:last-child{
+    position: absolute;
+    right: 0;
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: #333;
+    background: #D5D5D5;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #D5D5D5;
+    position: absolute;
+    left: 0;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+}
+
+#progressbar li:last-child:before{
+    right: 0;
+    margin-right: 0;
+}
+#progressbar li:first-child:after{
+    right: -100%;
+}
+#progressbar li.activet:first-child::after{
+    background: #D5D5D5;
+}
+#progressbar.act li.activet:first-child::after{
+    background: #21811D;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.activet:before,  #progressbar li.activet:after{
+    background: #21811D;
+    color: white;
+
+}
+#progressbar li.finish:after,#progressbar li.finish:before{
+    background: #21811D;
+    color: #fff;
+}
+
+/*checkout content css*/
+.header_area.checkout_header .middle_header {
+        display: block;
+}
+
+.middle_header a.back i {
+    margin-right: 10px;
+}
+.checkout_wrapper_area {
+    padding-bottom: 100px;
+}
+.checkout_right_side_area {
+    margin-left: 30px;
+    margin-top: 63px;
+}
+#msform .tab {
+     display: none;
+}
+
+.checkout_left_side_area {
+    margin-right: 30px;
+}
+.check_input_mr{
+    margin-bottom: 30px;
+}
+.checkout_first_step h2 {
+    font-size: 24px;
+    line-height: 34px;
+    color: #272525;
+    text-transform: uppercase;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 15px;
+    margin: 43px 0 55px;
+}
+.checkout_first_step h2 span {
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #272525;
+    width: 25px;
+    height: 25px;
+    line-height: 23px;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.checkout_first_step .answers .remember {
+    margin-bottom: 12px;
+}
+.checkout_first_step input, .checkout_first_step textarea, .checkout_first_step select {
+    padding: 15px 20px;
+    outline: 0;
+}
+.checkout_first_step textarea, .checkout_first_step select{
+    font-size: 16px;
+    line-height: 23px;
+    font-family: tescoregular;
+    color: #272525;
+}
+/*input label top*/
+.check_input_wrap input:focus + label, .check_input_wrap input:valid + label{
+      font-size: 12px;
+      color: #272525;
+      top: -11px;
+      left:30px;
+      background: #ffffff;
+      padding: 0px 5px 0px 5px;
+}
+.check_input_wrap{
+    position: relative;
+}
+.check_input_wrap label{
+    font-size: 16px;
+    line-height: 23px;
+    font-family: tescoregular;
+    color: #272525;
+    padding: 15px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+    pointer-events: none;
+}
+/*input label top end*/
+.checkout_first_step input[type=radio]{
+    padding: 0;
+}
+.checkout_first_step .remember input[type="radio"]{
+    width: 18px;
+    height: 18px;
+}
+.checkout_first_step .remember input[type="radio"]:checked::before {
+    width: 12px;
+    height: 12px;
+    left: 2px;
+    top: 2px;
+}
+.checkout_first_step p, .checkout_first_step p.will_use {
+    font-size: 16px;
+    line-height: 23px;
+    font-family: 'tescoregular';
+}
+.checkout_first_step label h2 {
+    border: none;
+    margin: 0;
+}
+
+.checkout_first_step label h2 img{
+    margin-right: 13px;
+    margin-top: -6px;
+}
+
+.checkout_first_step label p.set_as {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'tescobold';
+}
+
+.checkout_first_step .single_category{
+    border: none;
+}
+
+.checkout_first_step #receipant{
+    margin-top: 20px;
+}
+
+.checkout_btn {
+    text-align: right;
+    margin-top: 30px;
+}
+.checkout_btn button{
+    background: #3E3E3E;
+    color: #fff;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    padding:23px 0
+}
+.checkout_first_step.check_second_step h2 {
+    margin-bottom: 30px;
+    position: relative;
+}
+.checkout_first_step.check_second_step h2 span i {
+    color: #707070;
+}
+.checkout_first_step.check_second_step h2 a {
+    font-size: 16px;
+    line-height: 23px;
+    font-family: 'tescoregular';
+    color: #272525;
+    text-decoration-line: underline !important;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    margin-top: -50px;
+}
+.checkout_first_step.check_second_step h3 {
+    color: #272525;
+    margin-bottom: 20px;
+}
+.checkout_first_step.check_second_step .ship_address,.checkout_first_step.check_second_step .shipping_new_added {
+    margin-left: 40px;
+}
+
+.checkout_first_step.check_second_step .check_gift_note p img {
+    width: 16px;
+    margin-top: -3px;
+    margin-right: 10px;
+}
+
+.checkout_first_step.check_second_step .second_radio_box{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    border: 1px solid #707070;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px 0;
+}
+.checkout_first_step.check_second_step .second_radio_box h3{
+    margin: 10px 0;
+}
+.checkout_first_step.check_second_step .second_radio_box label{
+    text-align: center;
+    margin-left: 25px;
+}
+
+.third_step .check_free_ship {
+    margin-left: 40px;
+}
+.third_step .check_free_ship img{
+    margin-left: 65px;
+}
+.third_step .check_free_ship h3 {
+    margin: 15px 0;
+}
+.third_step .payment_option_area {
+    margin-left: 40px;
+}
+
+.single_payment_opt .remember p {
+    font-size: 16px;
+}
+
+.single_payment_opt {
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+
+.third_step .new_credit_card_form input::placeholder{
+    color: #A8A8A8;
+}
+
+.new_credit_card_form a{
+    text-align: right;
+    font-family: tescoregular;
+    color: #272525;
+    display: block;
+}
+.new_credit_card_form .remember {
+    margin-bottom: 8px;
+}
+.new_credit_card_form .remember p {
+    font-size: 16px;
+    font-family: 'tescobold';
+}
+
+.checkout_first_step.check_second_step.fourth_step .payment_option_result {
+    margin-left: 40px;
+}
+.checkout_first_step.check_second_step.fourth_step h3{
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.checkout_first_step.check_second_step.fourth_step p.por_title{
+    font-family: 'tescobold';
+    margin-top: 30px;
+}
+.has-danger input {
+    border-color: red;
+}
+.help-block.with-errors li {
+    font-size: 12px;
+    font-family: 'tescoregular';
+    color: red;
+    padding: 5px 0px 0px 3px;
+}
+
+/*====================
+ Account Information page css
+=================================================*/
+
+section.account_information_wrapper {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.account_info_left_side {
+    margin-right: 15px;
+}
+.account_info_left_side ul li a {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'tescoregular';
+    color: #272525;
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #AEAEAE;
+}
+
+.account_info_left_side ul li.info_active a {
+    font-family: 'tescobold';
+    background: #F8F8F8;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+.account_info_right_side {
+    margin-left: 35px;
+}
+
+.account_info_right_side h2 {
+    font-size: 24px;
+    line-height: 34px;
+    color: #272525;
+}
+
+.account_info_right_side h3 {
+    color: #272525;
+    margin: 30px 0 20px;
+}
+
+.account_info_form .ac_info_name {
+    margin-bottom: 100px;
+}
+
+.account_info_form .ac_info_name label {
+    color: #272525;
+    margin-bottom: 5px;
+}
+
+.account_info_form .ac_info_name label span {
+    color: #E01A2B;
+    margin-left: 3px;
+}
+
+.account_info_form .ac_info_name input {
+    padding: 20px;
+}
+
+.account_info_form .ac_info_name input::placeholder, .ac_info_select p.set_as{
+    font-size:14px;
+    line-height:20px;
+    color:#272525;
+    font-family:tescoregular;
+}
+
+.ac_info_select .remember {
+    margin-bottom: 30px;
+}
+
+.ac_info_btn {
+    margin-top: 60px;
+}
+
+.ac_info_btn input {
+    line-height: 23px;
+    border: none;
+    background: #272525;
+    color: #fff;
+    padding: 11px 40px;
+    border-radius: 23px;
+}
+/*address book*/
+.account_info_right_side.addressbook h3 {
+    font-size: 24px;
+    line-height: 34px;
+    font-family: 'tescoregular';
+    margin: 25px 0;
+}
+.address_info-area {
+    margin-bottom: 100px;
+}
+.address_info-area h5 {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+
+.address_info-area p, .address_info-area a {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'tescoregular';
+    margin-bottom: 5px;
+    color: #272525;
+}
+
+.account_info_right_side.addressbook p.have_no {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'tescoregular';
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.account_info_right_side.addressbook .ac_info_btn{
+    margin-top: 0;
+}
+/*my account*/
+.account_info_right_side.my_account h2 {
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.account_info_right_side.my_account h3 {
+    font-size: 24px;
+    line-height: 34px;
+    font-family: 'tescoregular';
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.account_info_right_side.my_account p, .account_info_right_side.my_account p a, .account_info_right_side.my_account h3 span{
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'tescoregular';
+    color: #272525;
+    margin-bottom: 15px;
+}
+.account_info_right_side.my_account h3 span{
+    margin-left: 60px;
+}
+.account_info_right_side.my_account p.cnt_title{
+    font-family: 'tescobold';
+    margin-top: 25px;
+}
+/*my orders*/
+.account_info_right_side.my_account.my_orders h2 {
+    margin-bottom: 27px;
+}
+.data_table_area .table{
+    margin-bottom: 40px;
+}
+.data_table_area .table tr th, .data_table_area .table tr td, .data_table_area .table tr td a {
+    font-size: 18px;
+    line-height: 25px;
+    color: #272525;
+    padding-left: 0;
+}
+
+.data_table_area .table tr td, .data_table_area .table tr td a{
+    font-family: tescoregular;
+}
+.data_table_area .table tr td a:first-child{
+    margin-right: 70px;
+}
+
+.data_table_area table.dataTable.no-footer{
+    border: none;
+}
+
+.data_table_area {
+    position: relative;
+}
+
+.data_table_area #mydatatable_paginate {
+    display: none;
+}
+.data_table_area #mydatatable_length {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #272525;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'tescoregular';
+}
+.data_table_area #mydatatable_info {
+    padding-top: 0;
+    font-size: 18px;
+    line-height: 25px;
+    color: #272525;
+    font-family: 'tescoregular';
+}
+
+/*my order details*/
+.orders_details_right_side {
+    margin-left: 35px;
+}
+.orders_details_right_side p, .orders_details_right_side p a, .item_order_table .table tr th, .item_order_table .table tr, .item_order_table .table tr td{
+    font-size: 14px;
+    line-height: 20px;
+    color: #272525;
+    font-family: 'tescoregular';
+    margin-bottom: 5px;
+}
+
+.item_order_table .table tr th, .item_order_table .table tr td{
+    padding: 0;
+
+}
+
+.item_order_table .table tr th{
+    border-bottom: 1px solid #707070;
+    padding-bottom: 15px;
+}
+.item_order_table .table tr:first-child{
+    border-bottom: 1px solid #707070;
+    padding: 15px;
+}
+.item_order_table .table tr.first_item td{
+    padding: 15px 0;
+}
+.item_order_table .table tr td{
+    padding-top: 11px;
+}
+.item_order_table .table tr td.bold{
+    font-family: 'tescobold';
+}
+.item_order p {
+    font-family: 'tescobold';
+    border-bottom: 1px solid #707070;
+    padding-bottom: 15px;
+}
+.item_order_table p {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 25px 0;
+}
+
+.ordered_info_details {
+    margin-top: 60px;
+}
+.ordered_info_details h3 {
+    font-family: 'tescoregular';
+    color: #272525;
+    margin-bottom: 25px;
+}
+
+.ordered_info_details p.heading {
+    font-size: 16px;
+    line-height: 23px;
+    color: #272525;
+    font-family: 'tescobold';
+    margin-bottom: 10px;
+}

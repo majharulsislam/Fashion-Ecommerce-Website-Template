@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product Listing</title>
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- slick css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+	<!-- font awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+	<!-- JqueryUi -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+	<!-- Main Css -->
+	<link href="asset/css/style.css" rel="stylesheet">
+	<link href="asset/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="header_area">
+	<!-- top header -->
+	<div class="top_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-xl-10 offset-xl-1 offset-md-1">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="top_header_content d-flex justify-content-end align-items-center">
+								<div class="top_header_slider text-center">
+							    	<p>Enter for a Chance to Win a $1,500 Gift Card | <a href="#">Sign Up for Email</a></p>
+							    	<p>Enter for a Chance to Win a $1,500 Gift Card | <a href="#">Sign Up for Email</a></p>
+							    	<p>Enter for a Chance to Win a $1,500 Gift Card | <a href="#">Sign Up for Email</a></p>
+								</div>
+								<div class="profile d-flex align-items-center justify-content-end">
+									<p>Welcome</p>
+									<ul class="d-flex align-items-center">
+										<li>
+											<a href="#"><img src="asset/img/icons/Profile.svg" alt="profile">Sign in</a> 
+										</li>
+										<span>|</span>
+										<li><a href="#">Login</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end top header -->
+
+	<!-- start middle header -->
+	<div class="middle_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-xl-10 offset-xl-1 offset-md-1">
+					<div class="row align-items-center">
+					<div class="col-md-7">
+						<div class="middle_title">
+							<a href="#" class="back2 pro_top"><i class="far fa-arrow-alt-circle-left"></i></a>
+							<a href="#" class="d-flex align-items-center">
+								<img src="asset/img/icons/cart-car.png" alt="cart-car">
+								<h1>Best Sell Shop</h1>
+							</a>
+						</div>
+					</div>
+						<div class="col-md-5">
+							<div class="middle_search_area d-flex align-items-center justify-content-end">
+								<div class="middle_search_box">
+									<form action="" method="">
+										<a href="#"><img src="asset/img/icons/Search.svg" alt="search"></a>
+									<input type="text" id="search" name="search" placeholder="Search">
+									</form>
+								</div>
+								<div class="middle_cart">
+									<a href="#">
+										<img src="asset/img/icons/Shop Card.svg" alt="Shop-card">
+										<span>01</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end middle header -->
+
+	<!-- header menu -->
+	<nav class="navbar_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-xl-10 offset-xl-1 offset-md-1">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="navbar_header">
+								<ul class="d-flex">
+									<li><a href="#">Designers</a></li>
+									<li class="active"><a href="#">For me</a></li>
+									<li><a href="#">The Edit</a></li>
+									<li><a href="#">Clothing</a></li>
+									<li><a href="#">Shoes</a></li>
+									<li><a href="#">Bags</a></li>
+									<li><a href="#">Watches</a></li>
+									<li><a href="#">Accessories</a></li>
+									<li><a href="#">Grooming</a></li>
+									<li><a href="#">Kids</a></li>
+									<li><a href="#">Home</a></li>
+									<li class="holiday">
+										<a href="#">
+											<img src="asset/img/icons/Holiday.svg" alt="holiday">Holiday
+										</a>
+									</li>
+									<li><a href="#">Sale</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- end header menu -->
+</header>
+
+<!-- Product listing cocktail area -->
+<section class="cocktail_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-xl-10 offset-xl-1 offset-md-1">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="cocktail_category">
+							<ul class="d-flex align-items-center">
+								<li>
+									<a href="#">Women's Clothing<i class="fas fa-angle-right"></i></a>
+								</li>
+								<li>
+									<a href="#">Dresses<i class="fas fa-angle-right"></i></a>
+								</li>
+								<li><a href="#">Cocktail</a></li>
+							</ul>
+						</div>
+						<div class="cocktail_title_area d-flex justify-content-between align-items-center">
+							<div class="cocktail_title">
+								<h2>Cocktail</h2>
+							</div>
+							<div class="shorted_area d-flex">
+								<div class="model_view d-flex">
+									<p>MODEL VIEW</p>
+									<p class="modeon">On</p>
+									<p class="active">Off</p>
+								</div>
+								<div class="short_by d-flex">
+									<p>Sort by</p>
+									<p>featured</p>
+									<button class="dropdown-toggle" id="featue_btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									   <i class="fas fa-chevron-down"></i>
+									</button>
+									<ul class="dropdown-menu feature_drop_menu">
+									    <li><a class="dropdown-item" href="#">Type</a></li>
+									    <li><a class="dropdown-item" href="#">Name</a></li>
+									    <li><a class="dropdown-item" href="#">Short</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Product listing cocktail area -->
+
+
+<!-- All product listing with category area -->
+<section class="product_listing_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-xl-10 offset-xl-1 offset-md-1">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="product_categories">
+							<p>1,132 Items</p>
+							<div class="category_items">
+								<div class="single_category">
+								    <input type="checkbox" id="cat1" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat1" class="question">Category</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Category1</a></li>
+								        <li><a href="#">Category2</a></li>
+								        <li><a href="#">Category3</a></li>
+								        <li><a href="#">Category4</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat2" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat2" class="question">Designer</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Designer1</a></li>
+								        <li><a href="#">Designer2</a></li>
+								        <li><a href="#">Designer3</a></li>
+								        <li><a href="#">Designer4</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat3" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat3" class="question">Color</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Color1</a></li>
+								        <li><a href="#">Color2</a></li>
+								        <li><a href="#">Color3</a></li>
+								        <li><a href="#">Color4</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat4" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat4" class="question">Size</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Size 1</a></li>
+								        <li><a href="#">Size 2</a></li>
+								        <li><a href="#">Size 3</a></li>
+								        <li><a href="#">Size 4</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat5" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat5" class="question">Length</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Length 1</a></li>
+								        <li><a href="#">Length 2</a></li>
+								        <li><a href="#">Length 3</a></li>
+								        <li><a href="#">Length 4</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat6" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat6" class="question">Sleeve Length</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Sleeve Length 1</a></li>
+								        <li><a href="#">Sleeve Length 2</a></li>
+								        <li><a href="#">Sleeve Length 3</a></li>
+								        <li><a href="#">Sleeve Length 4</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat7" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat7" class="question">Pattern/Print</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Pattern/Print 1</a></li>
+								        <li><a href="#">Pattern/Print 2</a></li>
+								        <li><a href="#">Pattern/Print 3</a></li>
+								        <li><a href="#">Pattern/Print 4</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat8" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat8" class="question">Material</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Material 1</a></li>
+								        <li><a href="#">Material 2</a></li>
+								        <li><a href="#">Material 3</a></li>
+								        <li><a href="#">Material 4</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat9" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat9" class="question">Style</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Style 1</a></li>
+								        <li><a href="#">Style 2</a></li>
+								        <li><a href="#">Style 3</a></li>
+								        <li><a href="#">Style 4</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat10" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat10" class="question">Price</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Price 1</a></li>
+								        <li><a href="#">Price 2</a></li>
+								        <li><a href="#">Price 3</a></li>
+								        <li><a href="#">Price 4</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat11" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat11" class="question">Sale</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Sale 1</a></li>
+								        <li><a href="#">Sale 2</a></li>
+								        <li><a href="#">Sale 3</a></li>
+								        <li><a href="#">Sale 4</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat12" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat12" class="question">New</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">New 1</a></li>
+								        <li><a href="#">New 2</a></li>
+								        <li><a href="#">New 3</a></li>
+								        <li><a href="#">New 4</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat13" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat13" class="question">Other1</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Other1 1</a></li>
+								        <li><a href="#">Other1 2</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat14" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat14" class="question">Other2</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Other2 1</a></li>
+								        <li><a href="#">Other2 2</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat15" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat15" class="question">Other3</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Other3 1</a></li>
+								        <li><a href="#">Other3 2</a></li>
+								      </ul>
+								    </div>
+								</div>
+
+								<div class="single_category">
+								    <input type="checkbox" id="cat16" name="q"  class="questions">
+								    <div class="plus">+</div>
+								    <label for="cat16" class="question">Other4</label>
+								    <div class="answers">
+								    	<ul>
+								        <li><a href="#">Other4 1</a></li>
+								        <li><a href="#">Other4 2</a></li>
+								      </ul>
+								    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="row all_listing_product">
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/1.png" alt="photo-1"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/2.png" alt="photo-2"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Jamie High Waist Black Jeans (Regular, Petite & Long)</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/3.png" alt="photo-2"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/4.png" alt="photo-4"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/6.png" alt="photo-6"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/7.png" alt="photo-7"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/8.png" alt="photo-8"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/5.png" alt="photo-5"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/9.png" alt="photo-9"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/10.png" alt="photo-10"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/a1.png" alt="photo-a1"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/a2.png" alt="photo-a2"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/a3.png" alt="photo-a3"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/a4.png" alt="photo-a4"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/a5.png" alt="photo-a5"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/16.png" alt="photo-16"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/17.png" alt="photo-17"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/18.png" alt="photo-18"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/19.png" alt="photo-19"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/20.png" alt="photo-20"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/21.png" alt="photo-21"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/22.png" alt="photo-22"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/23.png" alt="photo-23"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single_list_product recoment_single_card single_img_card">
+									<a href="#"><img src="asset/img/product-photo/24.png" alt="photo-24"></a>
+									<a href="#"><h3>Topshop</h3></a>
+									<p>Oversize Satin Shirt</p>
+									<div class="product_pricing">
+										<p><span class="red">USD 116.99</span> <span class="text-overline">130.99</span> (18% off)</p>
+										<p class="text_green">Offer Price $ 118.99</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product_listing_loading loading_button text-center" id="loadmorep">
+							<a href="#"><img src="asset/img/icons/Loading.png" alt="loading">LOADING</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End All product listing with category area -->
+
+
+<!-- Mobile Footer area -->
+<section class="footer_mobile_area mobile_show">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-xl-10 offset-xl-1 offset-md-1">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="dropdown_footer_top">
+							<div class="single_category">
+							    <input type="checkbox" id="ft1" name="q"  class="questions">
+							    <div class="plus">+</div>
+							    <label for="ft1" class="question">SUPPORT</label>
+							    <div class="answers">
+							    	<ul>
+								        <li><a href="#">Contact Us</a></li>
+								        <li><a href="#">Shipping Policy</a></li>	
+								        <li><a href="#">Returns</a></li>	
+								        <li><a href="#">Order Status & Tracking</a></li>	
+								        <li><a href="#">International Shipping</a></li>	
+								    </ul>
+							    </div>
+							</div>
+							<div class="single_category">
+							    <input type="checkbox" id="ft2" name="q"  class="questions">
+							    <div class="plus">+</div>
+							    <label for="ft2" class="question">SERVICES</label>
+							    <div class="answers">
+							    	<ul>
+								        <li><a href="#">Buy Online, Pick Up in Store</a></li>
+										<li><a href="#">Saks At Your Service</a></li>
+								    </ul>
+							    </div>
+							</div>
+							<div class="single_category">
+							    <input type="checkbox" id="ft3" name="q"  class="questions">
+							    <div class="plus">+</div>
+							    <label for="ft3" class="question">SAKSFIRST CARD</label>
+							    <div class="answers">
+							    	<ul>
+								        <li><a href="#">SaksFirst</a></li>
+										<li><a href="#">Apply for the SaksFirst Store Card</a></li>
+										<li><a href="#">Pay & Manage SaksFirst Store Card</a></li>
+										<li><a href="#">Pay & Manage SaksFirst Mastercard</a></li>
+								    </ul>
+							    </div>
+							</div>
+							<div class="single_category">
+							    <input type="checkbox" id="ft4" name="q"  class="questions">
+							    <div class="plus">+</div>
+							    <label for="ft4" class="question">STORES & CORPORATE</label>
+							    <div class="answers">
+							    	<ul>
+								        <li><a href="#">About Us</a></li>
+										<li><a href="#">Stores Careers</a></li>
+										<li><a href="#">Ecommerce Careers</a></li>
+										<li><a href="#">Diversity Equity & Inclusion</a></li>
+										<li><a href="#">Saks Foundation</a></li>
+										<li><a href="#">Statement on Fur</a></li>
+										<li><a href="#">Store Locations & Events</a></li>
+										<li><a href="#">Customer Bill of Rights</a></li>
+								    </ul>
+							    </div>
+							</div>
+						</div>
+						<div class="dropdown_footer_bottom text-center">
+							<div class="mobile_footer_social">
+								<ul class="social_icon d-flex justify-content-center">
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#">@thesaksman</a></li>
+								</ul>
+							</div>
+							<div class="mobile_saks_app_area d-flex justify-content-center">
+								<div class="mobile_signup_text">
+									<ul class="signup_text">
+										<li><a href="#">Sign up for Texts</a></li>
+									</ul>
+								</div>
+								<div class="mobile_get_app">
+									<ul class="saks_app">
+										<li>
+											<a href="#"><img src="asset/img/icons/Mobile.svg" alt="mobile-phone">Get The Saks App</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="dropdown_btn footer_btn">
+								<a href="#">SITE FEEDBACK</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Mobile Footer Area -->
+
+<!-- Desctop Footer Area -->
+<section class="footer_top_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-xl-10 offset-xl-1 offset-md-1">
+				<div class="footer_top">
+					<div class="row">
+						<div class="col-md-3">
+							<h4>SUPPORT</h4>
+							<ul>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Shipping Policy</a></li>
+								<li><a href="#">Returns</a></li>
+								<li><a href="#">Order Status & Tracking</a></li>
+								<li><a href="#">International Shipping</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3">
+							<h4>SERVICES</h4>
+							<ul>
+								<li><a href="#">Buy Online, Pick Up in Store</a></li>
+								<li><a href="#">Saks At Your Service</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3">
+							<h4>SAKSFIRST CARD</h4>
+							<ul>
+								<li><a href="#">SaksFirst</a></li>
+								<li><a href="#">Apply for the SaksFirst Store Card</a></li>
+								<li><a href="#">Pay & Manage SaksFirst Store Card</a></li>
+								<li><a href="#">Pay & Manage SaksFirst Mastercard</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3">
+							<h4>STORES & CORPORATE</h4>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Stores Careers</a></li>
+								<li><a href="#">Ecommerce Careers</a></li>
+								<li><a href="#">Diversity Equity & Inclusion</a></li>
+								<li><a href="#">Saks Foundation</a></li>
+								<li><a href="#">Statement on Fur</a></li>
+								<li><a href="#">Store Locations & Events</a></li>
+								<li><a href="#">Customer Bill of Rights</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row footer_social_area">
+						<div class="col-md-3">
+							<ul class="social_icon d-flex">
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#">@thesaksman</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul class="signup_text">
+								<li><a href="#">Sign up for Texts</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul class="saks_app">
+								<li>
+									<a href="#"><img src="asset/img/icons/Mobile.svg" alt="mobile-phone">Get The Saks App</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<div class="footer_btn">
+								<a href="#">SITE FEEDBACK</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="footer_bottom_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-xl-10 offset-xl-1 offset-md-1">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="footer_bottom d-flex justify-content-between">
+							<div class="footer_left_text d-flex">
+								<p>© 2021, Saks Fifth Avenue</p>
+								<p>CA Transparency in Supply Chains Act</p>
+							</div>
+							<div class="footer_right_text">
+								<ul class="d-flex">
+									<li><a href="#">Term of Use</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>						
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Footer area -->
+
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<!-- bootstrap bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jquery ui -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- slick js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- main js -->
+<script src="asset/js/custom.js"></script>
+
+</body>
+</html>
